@@ -1,1 +1,102 @@
-<!DOCTYPE html><html lang="ru"><head>	<title>Шаблон піонера</title>	<meta charset="UTF-8">	<meta name="format-detection" content="telephone=no">	<link rel="stylesheet" href="css/style.css">	<link rel="shortcut icon" href="/img/favicon.ico">	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> --></head><body>	<div class="container">		<main>			<div class="content">				<div id="people" class="layout">					список напарників				</div>				<div id="main" class="layout">					головна				</div>			</div>			<nav class="navigation">				<ul>					<li>						<a href="#history" class="active"></a>					</li>					<li><a href="#pattern"></a></li>					<li><a href="#main"></a></li>					<li><a href="#people">							<!-- <span>Напарники</span> -->						</a></li>					<li><a href="#setup"></a></li>				</ul>			</nav>		</main>	</div>	<script src="js/script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Шаблон піонера</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="/img/favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+</head>
+
+<body>
+	<div class="container">
+		<main>
+			<div class="content">
+
+				<div id="partners" class="layout">
+					<h1>Мої напарники</h1>
+
+					<form class="partners__block-add-new">
+						<input type="text" data-input-new-partner>
+						<span data-add-new-partner>добавити</span>
+						<button type="reset">X</button>
+					</form>
+
+					<ul class="partners__list" data-list-partners>
+						<li class="partner">
+							<p class="partner__name">Вона</p>
+							<div class="partner__buttons">
+								<div class="partner__btn-edit"></div>
+								<div class="partner__btn-delete"></div>
+							</div>
+						</li>
+					</ul>
+
+					<div class="partners__delete-all" data-delete-all-partners>
+						Удалить всех
+					</div>
+				</div>
+
+
+
+				<div id="main" class="layout">
+					головна
+				</div>
+
+				<div id="pattern" class="layout">
+					<p>Створити новий графік</p>
+					<div>
+						<p>Вибрати дні для служіння</p>
+						<br>
+						<form action="#">
+							<label>
+								<input type="checkbox" name="" id="">
+								<span>Понеділок</span>
+							</label>
+							<div>
+								додати час
+							</div>
+							<div>
+								<input type="number" value="00" name="" id="" min="0" max="23">
+								<input type="number" value="00" name="" id="" min="0" max="59">
+
+							</div>
+							<br>
+							<label>
+								<input type="checkbox" name="" id="">
+								<span>Вівторок</span>
+							</label>
+							<br>
+							<label>
+								<input type="checkbox" name="" id="">
+								<span>Середа</span>
+							</label>
+						</form>
+					</div>
+				</div>
+
+			</div>
+
+			<nav class="navigation">
+				<ul>
+					<li>
+						<a href="#history" class="active"></a>
+					</li>
+					<li><a href="#pattern"></a></li>
+					<li><a href="#main"></a></li>
+					<li><a href="#partners">
+							<!-- <span>Напарники</span> -->
+						</a></li>
+					<li><a href="#setup"></a></li>
+				</ul>
+			</nav>
+		</main>
+	</div>
+	<script src="js/script.js"></script>
+	<script src="js/listPartners.js"></script>
+</body>
+
+</html>
